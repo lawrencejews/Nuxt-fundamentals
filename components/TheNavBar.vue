@@ -1,0 +1,41 @@
+<script setup></script>
+
+<template>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        MyRecs
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+      </div>
+
+      <div class="navbar-end">
+        <NuxtLink to="/" class="navbar-item">Home</NuxtLink>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <NuxtLink to="/display" class="navbar-link">Display</NuxtLink>
+
+          <div class="navbar-dropdown">
+            <NuxtLink to="/display/photos" class="navbar-item">Photos</NuxtLink>
+            <NuxtLink to="/display/todos" class="navbar-item">Todos</NuxtLink>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+</template>
+  
+<style lang="scss">
+@import './node_modules/bulma/bulma.sass';
+@import './assets/styles/main.scss';
+</style>

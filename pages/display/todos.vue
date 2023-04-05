@@ -1,9 +1,8 @@
-<script setup></script>
+<script setup>
 
-<template>
-  <TheNavBar />
-  <NuxtPage />
-</template>
+</script>
+
+<template> <h1>Todos</h1></template>
 
 <style lang="scss">
 @import './node_modules/bulma/bulma.sass';
