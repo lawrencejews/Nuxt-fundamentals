@@ -2,9 +2,13 @@
 
 </script>
 
-<template> <h1>Home Page</h1></template>
+<template>
+  <Html>
+    <Head>
+      <Title>Water Bottle</Title>
+    </Head>
+  </Html>
+  <h1>Home Page</h1>
+</template>
 
-<style lang="scss">
-@import './node_modules/bulma/bulma.sass';
-@import './assets/styles/main.scss';
-</style>
+<style lang="scss"></style>
